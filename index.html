@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formulario Registro</title>
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/scripts.js" defer></script>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div class="card">
+
+        <div class="switch-container">
+            <div class="switch-slider"></div>
+            <button id="btnRegistro" class="switch-btn active">Registro</button>
+            <button id="btnLogin" class="switch-btn">Iniciar Sesión</button>
+        </div>
+
+        <div class="form-wrapper">
+
+            <form id="formRegistro" class="form active">
+                <h2>Crear Cuenta</h2>
+
+                <div class="input-group">
+                    <input type="text" id="regUsuario" required placeholder=" ">
+                    <label>Nombre de Usuario</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" id="regCorreo" required placeholder=" ">
+                    <label>Correo</label>
+                </div>
+
+                <div class="input-group password-group">
+                    <input type="password" id="regPassword" required minlength="8" placeholder=" ">
+                    <label>Contraseña</label>
+                    <span class="toggle-password" data-target="regPassword">👁</span>
+                    <div class="strength-bar" id="nivelSeguridad"></div>
+                </div>
+
+                <div class="input-group password-group">
+                    <input type="password" id="regConfirmPassword" required placeholder=" ">
+                    <label>Confirmar Contraseña</label>
+                    <span class="toggle-password" data-target="regConfirmPassword">👁</span>
+                </div>
+
+                <button type="submit" class="btn-primary">Registrarme</button>
+            </form>
+
+            <form id="formLogin" class="form">
+                <h2>Bienvenido</h2>
+
+                <div class="input-group">
+                    <input type="email" id="loginCorreo" required placeholder=" ">
+                    <label>Correo</label>
+                </div>
+
+                <div class="input-group password-group">
+                    <input type="password" id="loginPassword" required placeholder=" ">
+                    <label>Contraseña</label>
+                    <span class="toggle-password" data-target="loginPassword">👁</span>
+                </div>
+
+                <button type="submit" class="btn-primary">Ingresar</button>
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
